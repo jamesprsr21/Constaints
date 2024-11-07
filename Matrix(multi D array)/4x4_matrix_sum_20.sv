@@ -19,6 +19,7 @@ class ab;
 //Declaring the range of the data
  constraint y{foreach(a[i,j])
                    a[i][j] inside {[0:20]};}
+                 //each data will be in between 0 to 20
 
 //Sum of row is 20
 constraint z{foreach(a[i,j])

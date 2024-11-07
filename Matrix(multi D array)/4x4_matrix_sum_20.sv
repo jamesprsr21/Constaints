@@ -12,7 +12,10 @@ class ab;
 
                  }
                }
- 
+                 //a.size() defines the first array size of 4 element(signle Dimensional Array) | we can say the depth/column
+                 //a[i].size defines the copy of the first array 4 times in width/row manner | we can say width/row
+                 //So, 4by4 array/matrix will be created
+                 
 //Declaring the range of the data
  constraint y{foreach(a[i,j])
                    a[i][j] inside {[0:20]};}

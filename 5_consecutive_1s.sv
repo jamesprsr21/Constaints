@@ -3,7 +3,7 @@ class eg;
   rand bit [31:0]a;
   rand bit [4:0]i;
 
-  constraint c1{a== (31<<i);}
+  constraint c1{a== (31<<i);}  //31=5'b11111  | where i is random variable of 5bit
 
     
   function void post_randomize();

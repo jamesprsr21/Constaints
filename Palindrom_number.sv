@@ -83,6 +83,20 @@ endmodule
 34743
 */
 
+//EXPLANATION:
+
+       Quotient
+        _________
+Divisor| Dividend
+	   |
+       |_________
+        Remainder
+
+1. Divident/Divisor=Quotient
+2. Divident % Divisor= Remainder
+3. (any number) % 10 = Returns the Last digit of the number
+4. (any number) / 10^(number of digits) = Return the First digit of the number
+
 
 
 

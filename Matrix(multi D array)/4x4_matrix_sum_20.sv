@@ -2,13 +2,13 @@
 
 class ab;
 
-  rand int a[][];
+  rand int a[][];  //or we can directly assign value like a[4][4] which will create 4x4 matrix
     
      //Defining the size of the 2D array 
- constraint x{a.size()==4; 
+  constraint x{a.size()==4;   //0 1 2 3 (size of the first column)
                foreach(a[i]) 
                {
-                 a[i].size==4; 
+                 a[i].size==4;   //copy of the first column 4 times in row manner
 
                  }
                }

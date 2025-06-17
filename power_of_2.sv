@@ -75,3 +75,28 @@ AB a;
       a.randomize();
     end
 endmodule
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+class AB;
+  rand bit[31:0] val;
+  
+  
+  constraint c1{val inside {[0:32]};}
+  							
+  function void post_randomize();
+    for(int i; i<=10;i++) begin
+     val=2**i;
+      $display("Power of 2: %0d", val); end
+   endfunction
+endclass
+
+module test;
+AB a;
+  initial
+    begin
+      a=new();
+      repeat(10)
+      a.randomize();
+    end
+endmodule
